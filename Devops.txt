@@ -1,6 +1,3 @@
-14 may:
-
-
 ****DeVops:
 **docker
 **git
@@ -51,11 +48,13 @@ used to check who made chnages .
 -git config --global user.name"username"
 
 -we need  to clone the repositroy in visual code :git  clone url for the file.
+-if we want make a remote repositroy locally we will use git clone 
 - README.mdfile: instruction file.
 -fork : copy of repositroy
 - push to github: git push origin (origin : will use defalut world)
 - need to reomte the file:
 -pull request
+
 
 
 
