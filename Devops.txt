@@ -1,0 +1,64 @@
+14 may:
+
+
+****DeVops:
+**docker
+**git
+**terafrom
+
+*Git hub:
+create repository (repo: application store)
+
+Devops:
+-is a methodlogy(different methods to create anything)
+
+**Service & Microservice :
+-Service: means it a pavkage of code which package and deployed  i.e. Monolithic
+- Microservices: collection of services which is converted into micro size and deploying it . i.e. Microlithic 
+-monolithic Architure :if architure is stored in single file used for small scale Achitecture , smiple to deploy and undersatnd 
+-microlithic Architure : 4 different code with different page with diff file  , it is realibale(it will able to stay for longer time ) securtiy scalablity
+
+**Git bash  install 
+**Vscode 
+**Gitand Github: (github is colud where we store our all git rep and versions )
+-Git:  version control system. to manage the all versions is know as VcS.
+used for tracking code changes.
+used to check who made chnages .
+
+-Github: github makes tools that use git
+
+**visual studio code:
+new file
+** need to start the git  in VS code : git init (initilization) , ls -a 
+*********************************************************************************************
+-Git:  version control system. to manage the all versions is know as VcS.
+used for tracking code changes.
+used to check who made chnages .
+
+- create file: touch like.txt
+-git status :git mangining which files.
+-we need to create untracked filr to trck file : git add like.txt / git add.(add.  meansall txt files)
+-then agian git status 
+-for track the file need to stage the file with git add file name .
+-after adding the file: git commit -m(-m for message) "any message"
+-git status
+-git log: display logs , meanslog entry ,what we did .
+- if we have to addany text on stage file that will not take we need to agin stage the file.
+-unstage : git restore --staged file name : to unsatge the stage file.
+
+***Git Hub:
+-git config --global user.email "email id " :need to congifg
+-git config --global user.name"username"
+
+-we need  to clone the repositroy in visual code :git  clone url for the file.
+- README.mdfile: instruction file.
+-fork : copy of repositroy
+- push to github: git push origin (origin : will use defalut world)
+- need to reomte the file:
+-pull request
+
+
+
+
+
+
