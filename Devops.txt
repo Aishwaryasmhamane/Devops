@@ -55,6 +55,13 @@ used to check who made chnages .
 - need to reomte the file:
 -pull request
 
+**Branching:
+-when we initilize a git there is defalut branch.
+-every file work in main/master branch.
+-first we willcreate on txt file /sorce code then we will spilt thatcode in diff branches for diff purpose like development testing etc.
+- after completion of all the opreations like devlope testing we will  marge that to main brache.
+-overall we are doing the braching to protect our main branch form amy kind of harm / faliure
+
 
 
 
