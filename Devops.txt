@@ -42,7 +42,7 @@ used to check who made chnages .
 -for track the file need to stage the file with git add file name .
 -after adding the file: git commit -m(-m for message) "any message"
 -git status
--git log: display logs , meanslog entry ,what we did .
+-git log: display logs , meanslog entry ,what we did . it will display the commit.
 - if we have to addany text on stage file that will not take we need to agin stage the file.
 -unstage : git restore --staged file name : to unsatge the stage file.
 
