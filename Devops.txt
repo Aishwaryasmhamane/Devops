@@ -61,8 +61,37 @@ used to check who made chnages .
 -first we willcreate on txt file /sorce code then we will spilt thatcode in diff branches for diff purpose like development testing etc.
 - after completion of all the opreations like devlope testing we will  marge that to main brache.
 -overall we are doing the braching to protect our main branch form amy kind of harm / faliure
-
-
+-create file n VS
+- git init : after initializing the file will convert to repositrory.
+-ls -a
+-git branch : create branch main & dev
+-git add source code : staging file
+-git status
+-git commit -m 'Source code file'
+-add any thing in Sorce code of VS
+-create branch : gitbranch dev
+-we need to switch to that branch : git checkout branch name.
+-to see we are in which bracnch : git branch.
+-to read cat file name
+-stage the file: git add soure code
+-git commit -m "git change"
+-git status
+-create repositroy in github : source code 
+-git push origin 
+-ls
+-ls-a
+-git clone code link of repo.: to fetch the  remote repo to local
+-ls
+- cd source code
+- also create a folder VS as sorce code.
+- commit , status, stage
+- create the branch  main/dev
+- marge : dev to main : we need to switch to that branch  which we want to marge- git checkout dev-git marge main
+- git push origin  existing branch /dev
+-origin : remote repositroy url . for e.g git push origin dev means it will pushing the dev branch in our repository.
+-git push origin main
+-local to remote : push
+- remote to local: clone
 
 
 
