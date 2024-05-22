@@ -106,6 +106,9 @@ used to check who made chnages .
 -install docker on ubantu.
 *install docker in aws:
 -Ec2-instance- create-instance
+- docker ps: it wills show running container
+-docket p -a : it will show running existing conatiners.
+
 
 
 
