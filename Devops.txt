@@ -92,6 +92,23 @@ used to check who made chnages .
 -git push origin main
 -local to remote : push
 - remote to local: clone
+** virtulization:
+-we have  physical hard ware which that having OS and Os having hypervisor and then whole systems have a different os/virtualmachines .
+-incase ofAWS  we are having virtual hardware and operating sysetem but they didn't contain hypervisor amd then having oS 1 2.....
+- when we are using an colud virtualization its more better than physical because we can adjust the space according to our choice.
+
+***Docker:
+-docker is OS level application tool.
+- docker is a container (software in pacakges ) creating tool .
+-docker will create a container without os means  if we are facing an any issue for an any enviroment with the application then docker can create the caontainer i.e. docker file and that file can devoped in the others system which will porovide the same environment as we have.
+-the software that host the container is called enginex.
+-image :
+-install docker on ubantu.
+*install docker in aws:
+-Ec2-instance- create-instance
+
+
+
 
 
 
