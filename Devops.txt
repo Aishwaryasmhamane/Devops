@@ -100,15 +100,37 @@ used to check who made chnages .
 ***Docker:
 -docker is OS level application tool.
 - docker is a container (software in pacakges ) creating tool .
+- dockers make s environment similar for each team memeber working on application.
 -docker will create a container without os means  if we are facing an any issue for an any enviroment with the application then docker can create the caontainer i.e. docker file and that file can devoped in the others system which will porovide the same environment as we have.
 -the software that host the container is called enginex.
 -image :
 -install docker on ubantu.
 *install docker in aws:
 -Ec2-instance- create-instance
+-docker run :cmd
 - docker ps: it wills show running container
 -docket p -a : it will show running existing conatiners.
+-the interaction with OS is not more for docker .
 
+
+1.what is conatiner 
+2 what is advantages of conatiner over a physical linux machine or virtual machine.
+3.docker architure.
+
+* cnatianer :
+- it is light weight vrtual machine which doesnt have operating machine 
+
+** docker achitrcture:
+-dockerfile converts into dockerimage with help of docker run cmd  this all process in running on docker engine
+-there are two parts in docker engine  1.docker client 2. docker server/host 3.docker registry. 
+1.docker client :
+-conatin docker run, docker build, docker pull . it conatin demone.
+2.docker host/client :
+-it contais contaianers 
+3.registry
+- it stores docker images .
+
+*Docker demone
 
 
 
