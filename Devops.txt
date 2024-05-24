@@ -119,9 +119,13 @@ used to check who made chnages .
 
 * cnatianer :
 - it is light weight vrtual machine which doesnt have operating machine 
+- container is a process ,lighweight .
+-container starts in second.
+-fast
+-conatiner is lsocalated environment means its secure .
 
 ** docker achitrcture:
--dockerfile converts into dockerimage with help of docker run cmd  this all process in running on docker engine
+-dockerfile converts into docker image with help of docker run cmd  this all process in running on docker engine
 -there are two parts in docker engine  1.docker client 2. docker server/host 3.docker registry. 
 1.docker client :
 -conatin docker run, docker build, docker pull . it conatin demone.
@@ -131,6 +135,18 @@ used to check who made chnages .
 - it stores docker images .
 
 *Docker demone
+*********************
+-cd domwolads and copy the link of instance created in aws
+- sudo docker ps : docker process
+-to existance container and also the process which are running inbackground  : sudo docker ps-a
+-sudo docker run nginx : to start the nginx
+-sudo docker run -d nginx(-d : diattache) : conatiner will run in background.
+- container ip : sudo docker inspect conatiner id 
+- to access the link or url : curl
+-nginx tcp port :80
+-if Exitcode : 0 menas the process is sucessfully exicuted.
+-to check wheather the process or cmd is sucessfully exicuted or not : echo $? (echo : used to print output)
+
 
 
 
