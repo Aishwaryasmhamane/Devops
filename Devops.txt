@@ -135,17 +135,36 @@ used to check who made chnages .
 - it stores docker images .
 
 *Docker demone
-*********************
+**********************************
 -cd domwolads and copy the link of instance created in aws
 - sudo docker ps : docker process
 -to existance container and also the process which are running inbackground  : sudo docker ps-a
 -sudo docker run nginx : to start the nginx
--sudo docker run -d nginx(-d : diattache) : conatiner will run in background.
+-sudo docker run -d nginx(-d : diattache form forground process) : conatiner will run in background.
 - container ip : sudo docker inspect conatiner id 
 - to access the link or url : curl
 -nginx tcp port :80
 -if Exitcode : 0 menas the process is sucessfully exicuted.
 -to check wheather the process or cmd is sucessfully exicuted or not : echo $? (echo : used to print output)
+-sudo docker kill container id : to kill process / container
+- to stop any container: sudo docker stop container id
+-to start any container : sudo docker start conatiner id : the status is up 
+-sudo docker images : to see all images
+- to remove the image/conatiner : sudo docker rm conatiner id
+-first need to stop the conatiner before delete : sudo docker stop conatner id 
+-sudo docker run --name name of service nginx : to give name to any  service 
+- to create container :sudo docker run
+-sudo docker run(docker run : to create conatiner ) -it  (intercat) nginx /bin/bash (shell)
+-nginx files: cd/usr/share/ngix/html
+-cat file form nginx: it will read file
+-sudo docker exec -it conatiner id  shell /bash : to switch to that conatiner root user
+-sudo vim index.html file : create one html file
+-to copy paste the html file form local to conatiner : sudo dockercp ./index.html conatinerid:/usr/share/html/index.html
+-sudo doxker inspect conatiner id : take ip of conatiner
+-if the conatiner is not running or / not able to curl need to forward port:
+-sudo docker run -p 8080:80 -d nginx (-p : port mapping/forwarding): add this port to instance in aws (we can directly access that file form form instance ip )
+
+-
 
 
 
