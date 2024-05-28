@@ -184,7 +184,21 @@ sudo docker run hello-world
 5.login to container:sudo docker exec --it conatiner id  bash
 6. cd dircetory mane where we created an image for example :  cd \temp 
 
-
+*****Docker files:
+- with docker file we will build image
+-to create docker file we will use only :vi Dockerfile- then our editor file will open .
+-A text file that conatins all commands and instruction  in order to build given image .
+-instructions will always begin in captial letters.
+-instrustions in doxker files:
+1.from : form repository need to bring image 
+2.copy : add file form docker to (client to current dircetoy)  current directory
+3.Run : build your applications with make (coommand get execute while continer get created )
+4.cmd: commands which execute after creation of conatiner
+5.entry point instruction :
+6.workdir instructuon: sets the working directory for any command
+7.EnV : to set environment varibale sinside the  image
+8.EXpose:
+9.maiantainer : who created the image
 
 
 
