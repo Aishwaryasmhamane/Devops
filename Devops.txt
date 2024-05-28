@@ -174,8 +174,7 @@ sudo docker run hello-world
 -sudo doxker inspect conatiner id : take ip of conatiner
 -if the conatiner is not running or / not able to curl need to forward port:
 -sudo docker run -p 8080:80 -d nginx (-p : port mapping/forwarding): add this port to instance in aws (we can directly access that file form form instance ip )
-
--
+- to entre in conatiner : sudo docker exec --it container id shell /bash
 
 
 
