@@ -168,12 +168,12 @@ sudo docker run hello-world
 -sudo docker run(docker run : to create conatiner ) -it  (intercat) nginx /bin/bash (shell)
 -nginx files: cd/usr/share/ngix/html
 -cat file form nginx: it will read file
--sudo docker exec -it conatiner id  shell /bash : to switch to that conatiner root user
+-sudo docker exec -it(intreact/lofin in container) conatiner id  shell /bash : to switch to that conatiner root user
 -sudo vim index.html file : create one html file
 -to copy paste the html file form local to conatiner : sudo dockercp ./index.html conatinerid:/usr/share/html/index.html
 -sudo doxker inspect conatiner id : take ip of conatiner
 -if the conatiner is not running or / not able to curl need to forward port:
--sudo docker run -p 8080:80 -d nginx (-p : port mapping/forwarding): add this port to instance in aws (we can directly access that file form form instance ip )
+-sudo docker run -p 8080:80 -d nginx (-p : port mapping/forwarding): add this port to instance in aws (we can directly access that file form form instance ip ) if html is not visible then need to allow ufw in ubntu .
 - to entre in conatiner : sudo docker exec --it container id shell /bash
 -to see the chnages done in container: sudo docker diff container id
 -to create an image of container :
@@ -190,15 +190,43 @@ sudo docker run hello-world
 -A text file that conatins all commands and instruction  in order to build given image .
 -instructions will always begin in captial letters.
 -instrustions in doxker files:
-1.from : form repository need to bring image 
+1.from : form repository need to bring  base image 
 2.copy : add file form docker to (client to current dircetoy)  current directory
 3.Run : build your applications with make (coommand get execute while continer get created )
 4.cmd: commands which execute after creation of conatiner
-5.entry point instruction :
+5.entry point instruction : we will write the command but docker will priorities the cmd first form entry point as compare to cmd instructon i.e. defalut executable 
 6.workdir instructuon: sets the working directory for any command
-7.EnV : to set environment varibale sinside the  image
-8.EXpose:
+7.EnV : to set environment varibale inside the  image
+8.EXpose:we will expose the port (like port foewarding)
 9.maiantainer : who created the image
+10.ADD (ADD: we  will ftech any file only internet / we will unzip/compress to un compress  the file form local machine )
+11.shell : set the defalut shell of image 
+
+example:vim Dockerfile
+1.FROM ubuntu:latest 
+RUN eacho "hello" > /mnt/file1 
+cat Dockerfile
+
+After creation of file :
+-sudo docker build -t image name / e.g myimage1 path of docker file 
+-sudo docker images 
+-need to create container :sudo docker run -d image id/name
+-sudo docker ps -a
+-need to login in conatiner :sudo docker run -it image name /bin/bash
+-ls
+go to again in vim file : 
+1.FROM ubuntu:latest 
+2.ENV my name 
+3.WROKDIR /mnt
+4.copy..(copy : copy form host machine to conatainer )
+5.ADD (ADD: we  will ftech any file only internet / we will unzip/compress to un compress  the file form local machine )
+6.RUN eacho "hello" > /mnt/file1 
+7.cmd 
+- need to build the image  : sudo docker build -t imange name give diff name
+-sudo docker run -it myimage2 (diffname of image) /bin/bash
+
+
+
 
 
 
