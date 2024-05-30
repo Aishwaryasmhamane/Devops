@@ -225,6 +225,70 @@ go to again in vim file :
 - need to build the image  : sudo docker build -t imange name give diff name
 -sudo docker run -it myimage2 (diffname of image) /bin/bash
 
+**** docker file :
+1.vim Docker file :
+FROM ubuntu :latest
+LABLE maintainer=mail id of miantainer"
+RUN apt upadte -y && aptupgarde -y :upadte the images 
+RUN install nginx -y : installnginix
+EXPOSE :8080
+CMD["nginx","-g","daemon -off ;"]
+After creation:
+sudo dockker build -t nginx-conatainer
+sudo docker image
+sudo docker run -it -d nginx-container /bin/shell : -it used to login
+sudo docker attach image id : attach :is also  used to login 
+sudo apt install systemctl : systemctl is not present in that image so we can install it.
+systemctl startnginx
+apt install curl
+curl localhost
+exit
+sudo docker inspect container id
+
+
+**Task :
+-How to attch the voulme in exsiting container ?
+- calcualte space of perticular directory 
+*** killerkoda: for study site 
+
+***Docker volume :
+-in case of conatiner volume is dattached because it will remove or chanegs the properties of containers and make it  too heavy
+-volume is directory (dev containes the volume in linux)
+- when we attach the volume it will appes in dev directory.
+- we will not attach the volume to existing conatiner 
+- need to attach the volume while creating the container.
+**create volume:
+-sudo docker attach container id
+- sudo docker volume create my-vol : creating in host machine i.e. ubuntu
+-sudo docker volume ls : to see the volume
+-sudo docker run -it -v volume name :/volume  image id  /bim/bash : (/volume : we are mapping our volume  with /volume)
+-ls
+-cd volume
+-touch file{1..100}: creating the 100 files at time
+-ls
+-sudo docker run -d --name of new conatiner/use exsiting image \ --volumes-form existing container id  \ -v /public (path for second conatiner ):/new-volume (/public : mapping on public) nginx
+-sudo docker attach conatiner id  / id after running the above cmd 
+-ls
+-cd..
+-cd public/
+-ls
+* creating a file in volume
+-cd volume/ 
+-ls
+-cd/var/lib/docker/volumes
+-ls
+-check wheater files are sharing /not:
+sudo docker start the first container id
+sudo doxker ps frist conatiner id
+sudo docker start second conatiner id
+sudo docker ps second conatiner id
+
+
+
+
+
+
+
 
 
 
