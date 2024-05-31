@@ -283,6 +283,13 @@ sudo doxker ps frist conatiner id
 sudo docker start second conatiner id
 sudo docker ps second conatiner id
 
+**Gateway : reserved ip 
+
+****DOcker network :
+- sudo docker network ls : to see thenetworks
+-bridge : to communication between containers and to data transfer . bridge network is defalut network.
+-127.0.0.1: loop back address
+
 
 
 
