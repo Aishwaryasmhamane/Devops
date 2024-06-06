@@ -290,6 +290,9 @@ sudo docker ps second conatiner id
 -bridge : to communication between containers and to data transfer . bridge network is defalut network.
 -127.0.0.1: loop back address
 
+***Kubernetes :
+-conatiner manager 
+
 
 
 
