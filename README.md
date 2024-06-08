@@ -37,5 +37,5 @@ Ans:
    - SHH -azure
      **virtual machine :
      machines we can use virtually
-     https://www.microsoft.com/en-us/microsoft-365-life-hacks/organization/how-to-create-outlook-email-account- create outlook account.
+     https://account.microsoft.com/account/Account- create outlook account.
 
