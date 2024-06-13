@@ -290,11 +290,15 @@ sudo docker ps second conatiner id
 -bridge : to communication between containers and to data transfer . bridge network is defalut network.
 -127.0.0.1: loop back address
 
-***Kubernetes :
--conatiner manager 
+
 
 Q1. pod is crashed then what will happen in kuberntes achiture? -interview question
 ->it will first go to kublets  and kublets->  will communicate with APIS and then it will go to-> controller manger->sheduler->kublets->pod->kubproxy.
+
+***Kubernetes :
+-kubernetes achiture is based on cluster
+-conatiner manager 
+
 
 
 
