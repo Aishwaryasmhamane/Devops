@@ -294,10 +294,30 @@ sudo docker ps second conatiner id
 
 Q1. pod is crashed then what will happen in kuberntes achiture? -interview question
 ->it will first go to kublets  and kublets->  will communicate with APIS and then it will go to-> controller manger->sheduler->kublets->pod->kubproxy.
+Q2.what is yml file
 
 ***Kubernetes :
 -kubernetes achiture is based on cluster
 -conatiner manager 
+**Kubctl :
+to access the cluster we can use the kubctl
+-kubctl all: it will provides all resources we have
+-kubctl all -A :it will show the brif about cultur and pods
+-kubctl get pods : it will show the the pods form defalut name spaces
+-name space: provides the machanism for isolating group of resource
+- we can create the pod with yml manifasting
+-controller-pod-replicaset-deploment 
+**Deployment :
+-vim deployment.yml : yml file edit
+-kubctl create -f deployment.yml- create deployment file
+-kubctl get deploymets.apps
+-kubctl describe deployments.apps
+-kubctl get replicaset.apps: shows the replicaset
+-kubctl get pods: shows the pods
+- wecan automate the and auto refresh :watch -n /watch -n  2 kubectl get pod
+
+**replicaset:
+
 
 
 
