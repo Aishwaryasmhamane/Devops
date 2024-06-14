@@ -295,8 +295,10 @@ sudo docker ps second conatiner id
 Q1. pod is crashed then what will happen in kuberntes achiture? -interview question
 ->it will first go to kublets  and kublets->  will communicate with APIS and then it will go to-> controller manger->sheduler->kublets->pod->kubproxy.
 Q2.what is yml file
+Q3.what is static pod?
 
 ***Kubernetes :
+- kubernets require to auto heal and auto healing the controller.
 -kubernetes achiture is based on cluster
 -conatiner manager 
 **Kubctl :
@@ -304,10 +306,16 @@ to access the cluster we can use the kubctl
 -kubctl all: it will provides all resources we have
 -kubctl all -A :it will show the brif about cultur and pods
 -kubctl get pods : it will show the the pods form defalut name spaces
+-kubctl get name of service /pods : to get the info 
 -name space: provides the machanism for isolating group of resource
 - we can create the pod with yml manifasting
--controller-pod-replicaset-deploment 
+-container-pod-replicaset-deploment 
+-kubctl get po pod name -n servic ename -o yml : it will display the yml file for the mentioned service.
+-
 **Deployment :
+-
+- it is kubernetes controller that matches the cureent sate of clusture to the desire state 
+-deployment used for stateless application.
 -vim deployment.yml : yml file edit
 -kubctl create -f deployment.yml- create deployment file
 -kubctl get deploymets.apps
@@ -315,10 +323,36 @@ to access the cluster we can use the kubctl
 -kubctl get replicaset.apps: shows the replicaset
 -kubctl get pods: shows the pods
 - wecan automate the and auto refresh :watch -n /watch -n  2 kubectl get pod
-
+- controller->pod->replicaset->deployment
+**EFK
 **replicaset:
+- deployment controller
+***DemoneSet:
+-responsible for monitoring services
+-it will create pods in each and every service
+- it will fetch the data 
 
+***Satefulaset:
+- to store data we will use the stateful state
+-used to manage state full application.
+-it will used as stroge 
+- we will add the volumes data.
 
+*** kub service:
+-provides the static ip 
+- it will decide the traffic  for load blancing means which node will carry the traffic.
+-which will provide the load balancing using lables and selectors
+-it will descover the service
+- we will 30000-32767 - nodeport to exopse the pods
+1.load blacing service:
+-expose the service externally using external loadblancer
+-forntend exopse.
+2.culuster ip service:
+-if we define an culuster ip the it will exopse service  perticular ip internally
+3.node port service :
+-we want to expose an any service on perticular port will use node port
+4.external name:
+-it will used for DNS mapping.
 
 
 
