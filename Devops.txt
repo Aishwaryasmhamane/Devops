@@ -354,6 +354,33 @@ to access the cluster we can use the kubctl
 4.external name:
 -it will used for DNS mapping.
 
+***
+deployment creation : kubctl create deployment nginx-deployment  --image-nginx
+- to start the deployment : kubctl apply -f mysql.yml
+-to see the details in deployment : kubctl get deployment .apps/mysql-deployment
+- to create vim mysql.yml
+- to read cat mysql.yml
+-to read and login pod - kubctl exec -it mysql-deployment-conatiner id --/bin/bash
+-ls
+- to create cluster ip : vim cluster ip.yml
+-targetport : used for traffic port frowarding
+-to see the service : kubctl get service
+
+** node js deployment : backedsevice
+-vim nodejs.yml
+- paste the yml code
+-kubctl apply -f nodejs.yml :to create deployment
+- vim node port.yml : to create nodeport
+-kubctl apply -f nodeport.yml - create deployment
+** forent end deployment :
+- vim reactjs.yml
+-paste yml code
+- kubctl apply -f reactjs.yml :fordeployment
+-vim loadblancer .yml
+- selctor will define load blancer will work on which app /service
+-kubctl appl -f loadbalncer.yml
+-kubctl get vervice
+-if we need to scale : we need do replicas
 
 
 
